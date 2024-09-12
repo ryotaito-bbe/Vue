@@ -225,6 +225,18 @@ https://ja.vuejs.org/guide/built-ins/transition.html
   transition: opacity .3s;
 }
 
+/* swiper */
+.mv-swiper {
+  margin: auto;
+  width: 640px;
+}
+
+.mv-swiper img {
+  object-fit: cover;
+  width: 640px;
+  height: 450px;
+}
+
 @media (max-width:767px) {
   .contents {
     flex-direction: column;
@@ -282,6 +294,16 @@ https://ja.vuejs.org/guide/built-ins/transition.html
   .list__item {
     width: 49%;
   }
+
+  /* swiper */
+  .mv-swiper {
+    width: 100%;
+  }
+
+  .mv-swiper img {
+    width: 100%;
+  }
+
 }
 
 @media (max-width:480px) {
@@ -294,5 +316,9 @@ https://ja.vuejs.org/guide/built-ins/transition.html
 
   .list__item {
     width: 100%;
+  }
+
+  .mv-swiper img {
+    height: 112.5vw;
   }
 }

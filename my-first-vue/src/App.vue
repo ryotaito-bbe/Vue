@@ -74,9 +74,64 @@ const handleOpenModal = (modalInfo) => {
 const handleCloseModal = () => {
   modalOpen.value = false;
 };
+
+// Swiperを導入
+import { register } from "swiper/element/bundle";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+register();
+
+// Swiperのインスタンスが返ってくる
+const onSwiper = (swiper) => {
+  console.log("swiper", swiper);
+};
+
+// スライド位置が変更された時に呼ばれる
+const onSlideChange = () => {
+  console.log("slide change");
+};
+// swiper : pagenationの設定
+const pagenationSettings = {
+  hideOnClick: false,
+  renderBullet: (index, className) => {
+    return `<span class='${className} workPagination'></span>`;
+  },
+};
 </script>
 
 <template>
+  <router-view />
+  <swiper-container
+    :space-between="spaceBetween"
+    :pagination="pagenationSettings"
+    :autoplay="{
+      delay: 4000,
+    }"
+    :speed="2000"
+    :loop="true"
+    class="mv-swiper"
+  >
+    <swiper-slide>
+      <RouterLink to="/article">
+        <img :src="getImageUrl('cat01')" class="list__item-image" alt="" />
+      </RouterLink>
+    </swiper-slide>
+    <swiper-slide>
+      <img :src="getImageUrl('cat07')" class="list__item-image" alt="" />
+    </swiper-slide>
+    <swiper-slide>
+      <img :src="getImageUrl('cat11')" class="list__item-image" alt="" />
+    </swiper-slide>
+    <swiper-slide>
+      <img :src="getImageUrl('cat15')" class="list__item-image" alt="" />
+    </swiper-slide>
+    <swiper-slide>
+      <img :src="getImageUrl('cat18')" class="list__item-image" alt="" />
+    </swiper-slide>
+  </swiper-container>
   <div class="contents">
     <div class="side-wrapper">
       <div class="side-wrapper__inner">
