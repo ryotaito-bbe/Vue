@@ -1,3 +1,58 @@
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  color: #000;
+  font-family: "メイリオ", Meiryo, sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+
+/*=========================
+ヘッダー
+===========================*/
+.header {
+  padding: 20px 15px;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: fit-content;
+  margin: auto;
+}
+.header_link{
+  transition: .4s opacity;
+}
+.header_link:hover{
+  opacity: .6;
+}
+/*=========================
+フッター
+===========================*/
+.footer {
+  background: #fff;
+  padding: 40px 15px 20px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+}
+.fopoter__small {
+  font-size: 1.6rem;
+}
+/*=========================
+メインコンテンツ
+===========================*/
 .contents {
   display: flex;
   justify-content: space-between;
@@ -15,7 +70,7 @@
   padding: 0px 16px;
 }
 
-.list-wrapper .list {
+.list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -129,7 +184,7 @@
 }
 
 .modal-bg {
-  background-color: rgba(0 0 0 /.8);
+  background-color: rgba(0 0 0 /0.8);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -206,7 +261,7 @@ https://ja.vuejs.org/guide/built-ins/transition.html
 */
 .modal-enter-active,
 .modal-leave-active {
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .modal-enter-from,
@@ -221,13 +276,12 @@ https://ja.vuejs.org/guide/built-ins/transition.html
 
 .mediaList-enter-from,
 .mediaList-leave-to {
-
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 /* swiper */
 .mv-swiper {
-  margin: auto;
+  margin: 73px auto 0;
   width: 640px;
 }
 
@@ -237,7 +291,64 @@ https://ja.vuejs.org/guide/built-ins/transition.html
   height: 450px;
 }
 
-@media (max-width:767px) {
+/*=========================
+singlepage内のスタイル
+===========================*/
+.article {
+  padding: 73px 15px 0;
+  min-height: calc(100vh - 73px);
+}
+.article__inner {
+  max-width: 780px;
+  margin: auto;
+}
+.article__image {
+  width: 100%;
+}
+.article__title-wrapper {
+  padding: 16px 0;
+}
+.article__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.article__tag-wrapper {
+  padding: 0 0 16px;
+}
+.article-tag-top,
+.article-tag-bottom {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.article-tag-top {
+  margin: 0 0 10px 0;
+}
+
+.article-tag-title {
+  font-size: 1.4rem;
+}
+.article-tag {
+  width: 80px;
+  background: #e3e3e3;
+  color: #000;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.article__description-wrapper {
+  padding: 16px 0 0 0;
+}
+.article__description {
+  font-size: 1.8rem;
+}
+@media (max-width: 767px) {
   .contents {
     flex-direction: column;
     justify-content: flex-start;
@@ -303,10 +414,9 @@ https://ja.vuejs.org/guide/built-ins/transition.html
   .mv-swiper img {
     width: 100%;
   }
-
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .list__item img {
     width: 100%;
     object-fit: cover;
