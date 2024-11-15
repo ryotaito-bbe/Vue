@@ -5,13 +5,13 @@ import SinglePage from '../views/SinglePage.vue';
 
 const routes = [
   {
-    path: '/ito/vue/vue_lesson01_5/',
+    path: '/ito/vue/vue_lesson01_6/',
     // path: '/',
     name: 'home',
     component: ArchivePage,
   },
   {
-    path: '/ito/vue/vue_lesson01_5/article/:id',
+    path: '/ito/vue/vue_lesson01_6/article/:id',
     // path: '/article/:id',
     name: 'article',
     component: SinglePage,

@@ -8,5 +8,5 @@
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . ito/vue/vue_lesson01_5/index.html [L]
+  RewriteRule . ito/vue/vue_lesson01_6/index.html [L]
 </IfModule>

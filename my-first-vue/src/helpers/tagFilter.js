@@ -2,9 +2,11 @@ import { catObj } from "../catData";
 import { catObjRef } from "../catData";
 
 export const tagFilter = (e) => {
+  console.log("タグフィルタ呼ばれた")
   const result = [];
   e.preventDefault();
   const selectedTag = e.target.getAttribute("data-tag");
+  console.log("selectedTag",selectedTag)
 
   for (const value of Object.values(catObj)) {
     if (selectedTag === value.tagState) {
@@ -16,4 +18,5 @@ export const tagFilter = (e) => {
     }
   }
   catObjRef.value = result;
+  console.log(catObjRef.value);
 };

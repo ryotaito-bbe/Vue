@@ -58,6 +58,9 @@ const handleOpenModal = (modalInfo) => {
         >
       </div>
     </div>
+    <div class="page-link-wrapper">
+      <RouterLink class="page-link" :to="{ name: 'article', params: { id: item.id} }">詳しく見る</RouterLink>
+    </div>
   </li>
 
 </template>

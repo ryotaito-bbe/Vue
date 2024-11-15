@@ -2,7 +2,7 @@
 import { catObj } from '../catData.js';
 import { getImageUrl } from '../helpers/getImageUrl.js';
 import { useRoute } from 'vue-router';
-
+import { tagFilter }  from "../helpers/tagFilter"
 // idを元に特定の猫記事の情報を取得
 const route = useRoute();
 const catId = route.params.id;
@@ -21,8 +21,25 @@ const articleInfo = catObj.find((obj) => obj.id === catId);
       </div>
       <div class="article__tag-wrapper">
         <div class="article-tag-top">
-          <p class="article-tag-title">様子:</p><span class="article-tag">{{articleInfo.tagState}}</span>
+          <!-- <p class="article-tag-title">様子:</p><span class="article-tag">{{articleInfo.tagState}}</span> -->
+          <p class="article-tag-title">様子:</p>
+          <!-- <a
+            class="article-tag"
+            href="#"
+            :data-tag="articleInfo.tagState"
+            @click="tagFilter"
+            >{{ articleInfo.tagState }}</a
+          > -->
+          <RouterLink
+            class="article-tag"
+            :to="{ name: 'home', params: { catContents: tagFilter } }"
+            :data-tag="articleInfo.tagState"
+            @click="tagFilter"
+          >
+          {{ articleInfo.tagState }}
+          </RouterLink>
         </div>
+
         <div class="article-tag-bottom">
           <p class="article-tag-title">種類:</p><span class="article-tag">{{articleInfo.tagCatType}}</span>
         </div>

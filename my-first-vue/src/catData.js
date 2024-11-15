@@ -12,6 +12,7 @@ export const catObj = [
     tagState: '寝てる',
     tagCatType: '白',
     description: 'cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。cat01の本文です。',
+    pickup: true,
   },
   {
     id:'cat02',
@@ -20,6 +21,7 @@ export const catObj = [
     tagState: '正面を見てる',
     tagCatType: 'きじ',
     description: 'cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。cat02の本文です。',
+    pickup: false,
   },
   {
     id:'cat03',
@@ -28,6 +30,7 @@ export const catObj = [
     tagState: '仰向け',
     tagCatType: '黒',
     description: 'cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。cat03の本文です。',
+    pickup: false,
   },
   {
     id:'cat04',
@@ -36,6 +39,7 @@ export const catObj = [
     tagState: '上目遣い',
     tagCatType: '茶',
     description: 'cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。cat04の本文です。',
+    pickup: false,
   },
   {
     id:'cat05',
@@ -44,6 +48,7 @@ export const catObj = [
     tagState: '上目遣い',
     tagCatType: '白黒',
     description: 'cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。cat05の本文です。',
+    pickup: false,
   },
   {
     id:'cat06',
@@ -52,6 +57,7 @@ export const catObj = [
     tagState: '横向き',
     tagCatType: 'みけ',
     description: 'cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。cat06の本文です。',
+    pickup: false,
   },
   {
     id:'cat07',
@@ -60,6 +66,8 @@ export const catObj = [
     tagState: '横向き',
     tagCatType: 'きじ',
     description: 'cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。cat07の本文です。',
+    pickup: true,
+
   },
   {
     id:'cat08',
@@ -68,6 +76,7 @@ export const catObj = [
     tagState: '肉球',
     tagCatType: 'みけ',
     description: 'cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。cat08の本文です。',
+    pickup: false,
   },
   {
     id:'cat09',
@@ -76,6 +85,7 @@ export const catObj = [
     tagState: '上目遣い',
     tagCatType: 'きじ',
     description: 'cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。cat09の本文です。',
+    pickup: false,
   },
   {
     id:'cat10',
@@ -84,6 +94,7 @@ export const catObj = [
     tagState: '横向き',
     tagCatType: 'きじ',
     description: 'cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。cat10の本文です。',
+    pickup: false,
   },
   {
     id:'cat11',
@@ -92,6 +103,8 @@ export const catObj = [
     tagState: '仰向け',
     tagCatType: '白',
     description: 'cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。cat11の本文です。',
+    pickup: true,
+
   },
   {
     id:'cat12',
@@ -100,6 +113,7 @@ export const catObj = [
     tagState: '仰向け',
     tagCatType: 'きじ',
     description: 'cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。cat12の本文です。',
+    pickup: false,
   },
   {
     id:'cat13',
@@ -108,6 +122,7 @@ export const catObj = [
     tagState: '遊んでる',
     tagCatType: '白',
     description: 'cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。cat13の本文です。',
+    pickup: false,
   },
   {
     id:'cat14',
@@ -116,6 +131,7 @@ export const catObj = [
     tagState: '寝てる',
     tagCatType: '白黒',
     description: 'cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。cat14の本文です。',
+    pickup: false,
   },
   {
     id:'cat15',
@@ -124,6 +140,7 @@ export const catObj = [
     tagState: '寝てる',
     tagCatType: 'みけ',
     description: 'cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。cat15の本文です。',
+    pickup: true,
   },
   {
     id:'cat16',
@@ -132,6 +149,7 @@ export const catObj = [
     tagState: '上を見てる',
     tagCatType: '茶',
     description: 'cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。cat16の本文です。',
+    pickup: false,
   },
   {
     id:'cat17',
@@ -140,6 +158,7 @@ export const catObj = [
     tagState: '横を見てる',
     tagCatType: '白黒',
     description: 'cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。cat17の本文です。',
+    pickup: false,
   },
   {
     id:'cat18',
@@ -148,6 +167,7 @@ export const catObj = [
     tagState: '正面を見てる',
     tagCatType: '茶',
     description: 'cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。cat18の本文です。',
+    pickup: true,
   },
   {
     id:'cat19',
@@ -156,6 +176,7 @@ export const catObj = [
     tagState: '正面を見てる',
     tagCatType: 'みけ',
     description: 'cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。cat19の本文です。',
+    pickup: false,
   },
   {
     id:'cat20',
@@ -164,6 +185,7 @@ export const catObj = [
     tagState: '仰向け',
     tagCatType: 'みけ',
     description: 'cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。cat20の本文です。',
+    pickup: false,
   },
 ];
 export const catObjRef = ref(catObj);
