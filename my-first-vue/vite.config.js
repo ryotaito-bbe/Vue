@@ -13,5 +13,5 @@ export default defineConfig({
     }
   })],
   // base: "./", // ビルド時の真っ白対応
-  base: "/ito/vue/vue_lesson01_6/", // router設定後のビルド時のパス指定
+  base: "/ito/vue/vue_lesson01_7/", // router設定後のビルド時のパス指定
 });

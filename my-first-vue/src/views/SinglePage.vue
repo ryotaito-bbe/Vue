@@ -21,18 +21,10 @@ const articleInfo = catObj.find((obj) => obj.id === catId);
       </div>
       <div class="article__tag-wrapper">
         <div class="article-tag-top">
-          <!-- <p class="article-tag-title">様子:</p><span class="article-tag">{{articleInfo.tagState}}</span> -->
           <p class="article-tag-title">様子:</p>
-          <!-- <a
-            class="article-tag"
-            href="#"
-            :data-tag="articleInfo.tagState"
-            @click="tagFilter"
-            >{{ articleInfo.tagState }}</a
-          > -->
           <RouterLink
             class="article-tag"
-            :to="{ name: 'home', params: { catContents: tagFilter } }"
+            :to="{ name: 'home' }"
             :data-tag="articleInfo.tagState"
             @click="tagFilter"
           >
@@ -41,7 +33,15 @@ const articleInfo = catObj.find((obj) => obj.id === catId);
         </div>
 
         <div class="article-tag-bottom">
-          <p class="article-tag-title">種類:</p><span class="article-tag">{{articleInfo.tagCatType}}</span>
+          <p class="article-tag-title">種類:</p>
+          <RouterLink
+            class="article-tag"
+            :to="{ name: 'home' }"
+            :data-tag="articleInfo.tagCatType"
+            @click="tagFilter"
+          >
+          {{ articleInfo.tagCatType }}
+          </RouterLink>
         </div>
       </div>
       <div class="article__description-wrapper">

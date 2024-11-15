@@ -2,6 +2,7 @@
 import { getImageUrl } from "../helpers/getImageUrl"
 import { modalOpenRef, modalImgPathRef, modalTitleRef } from "../helpers/modalHelpers"
 import { tagFilter }  from "../helpers/tagFilter"
+
 defineProps({
     item: Object,
 });

@@ -31,6 +31,12 @@ vue_lesson01_6:ホバーアニメーションや詳細ページへの導線を�
 # 更新履歴
 ※リポジトリ作成後、途中からとはなりますが以下に追記していきます。
 
+### 20241115 vue_lesson01_7:vue_lesson01_6の開発環境上で表示されていたwarnの解消
+[作業内容]<br>
+・下記warnの解消のため、Piniaの導入予定であったが、導入せずに記述内容を書き換えて対処できたため、落着とした(SinglePage.vue内のwarnの元となった記述の削除)。
+> vue-router.mjs:51 [Vue Router warn]: Discarded invalid param(s) "hogehogehoge" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.<br>
+・ArchiveMediaListButton.vueは現時点では不要なため削除した。
+
 ### 20241115 vue_lesson01_6:ホバーアニメーションや詳細ページへの導線を追加
 [作業内容]<br>
 ・index.html内のtitleテキストをvue_lesson01_6に変更
@@ -40,9 +46,9 @@ vue_lesson01_6:ホバーアニメーションや詳細ページへの導線を�
 ・(style.css)ArchiveTagListItem.vue内のタグ要素に対してホバーアニメーションを追加。
 
 # ToDo
+**・詳細記事の情報をデータベースに格納し、各操作にあわせて呼び出して表示できるようにしていく**<br>
+→バックエンドの処理をLaravel、データベースはMySQLとして実装していく予定。
+
+**[完了]**
 **・Piniaを導入＆本ライブラリを使用して開発環境上のwarnが表示されないよう、データの管理をしていく**<br>
-→作業内容に記載した「・SinglePage.vueのタグ箇所に対して、RouterLinkを設置。クリック後、一覧ページへ遷移するよう実装。」にて、ビルド後の公開用サーバー上では表示されていなかったが、開発環境上のconsoleには、下記warnが表示されていた。<br>
-
-> vue-router.mjs:51 [Vue Router warn]: Discarded invalid param(s) "hogehogehoge" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.<br>
-
-Vue Routerに対して非推奨の処理を行ったためのもので、ブラウザの表面上の振る舞いは期待する結果を得られているが、今後この部分を残したまま他作業に突き進むと、結果的にアプリ自体が破損する恐れがあるため、状態管理ライブラリのPiniaを導入し、推奨された形で改めてデータ管理をしていく。
+→vue_lesson01_7の作業内容の通り、Piniaを導入せずとも解消できたため、上記作業についてはいったん落着とする。

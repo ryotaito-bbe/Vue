@@ -12,7 +12,7 @@ const pagenationSettings = {
     return `<span class='${className} workPagination'></span>`;
   },
 };
-// から配列にpushメソッドで必要な情報を後程格納していく
+// 空配列にpushメソッドで必要な情報を後程格納していく
 const selectedData = [];
 catObj.forEach(cO => {
   for (const [key, value] of Object.entries(cO)) {
@@ -21,9 +21,6 @@ catObj.forEach(cO => {
     }
   }
 });
-console.log(selectedData);
-
-
 // catData.js内の各猫データに、「pickup」キーを設け、「true」か「false」を付与
 // 上記「true」に該当するデータがどれか特定し、そのid名を取得
 // selectedData配列として、格納し本vueファイルでスワイパーアイテム内の情報として使用する
